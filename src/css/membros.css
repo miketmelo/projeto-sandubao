@@ -1,0 +1,75 @@
+body {
+    font-family: "Poppins";
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cabecalho .titulo-pagina {
+    letter-spacing: 5px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+.cabecalho .logo {
+    width: 65px;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+.conteudo a {
+    position: relative;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+}
+
+.conteudo a img {
+    width: 400px;
+    height: 240px;
+}
+
+a span {
+    display: none;
+}
+
+a:hover span {
+    display: block;
+    position: absolute;
+    padding: 4px;
+    top: 0px;
+    left: 100%;
+}
+
+.imagem-fundo {
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-fundo .imagem {
+    height: 100vh;
+}
+
+.imagem-fundo::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7511379551820728) 50%, rgba(0,0,0,1) 100%);
+}

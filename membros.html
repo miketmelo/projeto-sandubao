@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/membros.css">
+
+    <title>Membros</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Inicio</li></a>
+                <li><a href="./membros.html">Membros</li></a>
+                <li><a href="./ranking.html">Ranking</li></a>
+                <li><a href="./enquete.html">Enquetes</li></a>
+                <li><a href="./staff.html">Staff</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>MEMBROS DO SERVIDOR</h1>
+    </div>
+    <div class="membros-container">
+        <h1>Selecione um Membro:</h1>
+        <select id="membros" onchange="mostrarImagemSelecionada()">
+            <option value="" disabled selected>Escolha um membro</option>
+            <option value="nome0">32</option>
+            <option value="nome1">35 Mascadajino</option>
+            <option value="nome2">Altair</option>
+            <option value="nome3">Dr. Plague</option>
+            <option value="nome4">Dragaorobo</option>
+            <option value="nome5">Fxture</option>
+            <option value="nome6">Mascada</option>
+            <option value="nome7">Mikon</option>
+            <option value="nome8">Nora</option>
+            <option value="nome9">Pablo</option>
+            <option value="nome10">Semi</option>
+            <option value="nome11">Sunshiner</option>
+            <option value="nome12">Sakuta</option>
+            <option value="nome13">Torrith</option>
+            <option value="nome14">Unoxya</option>
+        </select>
+        <button onclick="exibirImagem()">Pesquisar</button>
+        <div class="imagem-container" id="imagem-container"></div>
+    </div>
+    <script src="./js/imagem.js"></script>
+</body>
+</html>

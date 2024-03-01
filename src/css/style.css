@@ -1,0 +1,147 @@
+body {
+    font-family: "Poppins";
+    height: 100vh;
+    background-image: linear-gradient(to bottom,#f9fbf7, #C9D8FF);;
+}
+
+.cabecalho {
+    background-color: rgba(17, 16, 16, 0.829);
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+#burguer {
+    background-color: rgba(255, 23, 23, 0);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: #eff0ef;
+    color: black;
+}
+
+.menu li a {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    padding: 5px 60px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.cabecalho nav li a:hover {
+    background-color: rgba(185, 182, 182, 0.904);
+}
+
+.container {
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.bg-img {
+    position: absolute;
+    top: 58px;
+    left: 430px;
+    width: 480px;
+    height: auto;
+}
+
+.texto-site {
+    position: absolute;
+    top: 370px;
+    left: 475px;
+    font-size: 15px;
+    color: #000;
+}
+
+.botao {
+    position: absolute;
+    top: 450px;
+    left: 590px;
+    width: 150px;
+    height: 55px;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(52, 52, 52);
+    background: linear-gradient(90deg,
+            rgba(52, 52, 52, 1) 0%,
+            rgba(97, 119, 255, 1) 0%,
+            rgba(33, 57, 189, 1) 100%);
+}
+
+.wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #585858;
+    font-family: "Roboto", sans-serif;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+}
+
+.footer {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+}
+
+.footer-btn-close {
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cfcca8;
+    color: #000000;
+    border-radius: 3px;
+}

@@ -1,0 +1,156 @@
+body {
+    font-family: "Poppins";
+    background-color: #333;
+}
+
+.cabecalho {
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    padding: 5px 60px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.cabecalho nav li a:hover {
+    background-color: gray;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(223, 223, 235);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    letter-spacing: 3px;
+}
+
+.table-container {
+    position: fixed;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+
+.table-container1 {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+
+.table-container2 {
+    position: fixed;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+
+.dark-table {
+    background-color: #222;
+    color: white;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+.dark-table th {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #444;
+}
+
+.dark-table td {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #444
+}
+
+
+.dark-table:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.dark-table:hover:before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.img-rank {
+    position: fixed;
+    width: 24px;
+    height: auto;
+    left: 86%;
+}
+
+.heart-rank {
+    position: fixed;
+    width: 24px;
+    height: auto;
+    left: 86%;
+}
+
+.badge-rank1 {
+    position: fixed;
+    width: 65px;
+    height: auto;
+    left: 75%;
+    bottom: 52%;
+}
+
+.badge-rank2 {
+    position: fixed;
+    width: 65px;
+    height: auto;
+    left: 75%;
+    bottom: 28%;
+}
+
+.badge-rank3 {
+    position: fixed;
+    width: 67px;
+    height: auto;
+    left: 75%;
+    bottom: 4%;
+}

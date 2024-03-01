@@ -1,0 +1,48 @@
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 0;
+    }
+
+    .menu {
+        display: none;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: flex;
+        justify-content: center;
+        border-radius: 0;
+        padding: 4px;
+        font-size: 12px;
+        border-top: 2px solid;
+        border-color: rgba(0, 0, 0, 0.541);
+    }
+
+    .cabecalho nav li a:hover {
+        background-color: rgba(255, 23, 23, 0);
+    }
+
+    .bg-img {
+        width: 360px;
+        height: auto;
+        left: 20px;
+    }
+
+    .texto-site {
+        left: 30px;
+        font-size: 13px;
+        top: 310px;
+    }
+
+    .botao {
+        left: 125px;
+        top: 395px;
+    }
+}
+
+@media (min-width: 1030px) {
+    #burguer {
+        display: none;
+    }
+}

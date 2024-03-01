@@ -1,0 +1,76 @@
+body {
+    font-family: "Poppins";
+    background-color: rgba(79, 171, 224, 0.39);
+}
+
+.cabecalho {
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    padding: 5px 60px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.cabecalho nav li a:hover {
+    background-color: gray;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 12%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(223, 223, 235);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    letter-spacing: 3px;
+}
+
+.membros-container {
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    text-align: center;
+}
+
+.membros-container h1 {
+    font-size: 20px;
+}
+
+select {
+    font-size: 15px;
+    padding: 6px;
+}
+
+button {
+    padding: 6px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.imagem-container {
+    position: fixed;
+    top: 45%;
+    left: 450px;
+}

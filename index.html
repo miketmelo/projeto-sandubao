@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <title>Sandubão</title>
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <nav>
+            <ul id="meumenu" class="menu">
+                <li><a href="./index.html">Inicio</li></a>
+                <li><a href="./membros.html">Membros</li></a>
+                <li><a href="./ranking.html">Ranking</li></a>
+                <li><a href="./enquete.html">Enquetes</li></a>
+                <li><a href="./staff.html">Staff</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <img class="bg-img" src="./src/img/bg1.png">
+        <div class="texto-site">
+            <h1>BEM VINDO AO SANDUBAO</h1>
+            <p>Quer Participar? Click no botão e leia antes!</p>
+        </div>
+        <div class="button">
+            <a href="#demo-modal">
+            <img class="botao" src="./src/img/button.png"></a>
+        </div>
+    </div>
+
+    <div id="demo-modal" class="modal">
+        <div class="content">
+            <h1>Oque é o SANDUBÃO</h1>
+            <br>
+            <p>
+                É um servidor que possui membros de todos os lugares, lá debatemos sobre jogos, animes,
+                memes, economia, vida e entre outros assuntos.<br>
+                também zuamos e brincamos com a cara um do outro sempre respeitando se os outros
+                querem entrar na brincadeira ou não.<br>
+                Fazemos o possivel pra manter o servidor saudavel e bacana pra todos se sentirem
+                em casa.<br>
+                Possuimos regras? SIM as basicas pra manter o respeito.<br>
+                Se quiser da uma conferida...
+            </p>
+            <br>
+            <a href="https://i.imgur.com/0RxuueT.jpg">
+            <p>CLICK AQUI E FAÇA UM TOUR PELO SERVER</p>
+            </a>
+
+            <div class="footer">
+                <a href="#" class="footer-btn-close"> Fechar </a>
+            </div>
+
+            <a href="#" class="close">&times;</a>
+        </div>
+    </div>
+    <script>
+        function clickMenu() {
+            if (meumenu.style.display == 'block') {
+                meumenu.style.display = 'none'
+            } else {
+                meumenu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
